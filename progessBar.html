@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page Title</title>
+	</head>
+	<body>
+	Status: <progress id="progBar" min="0" max="100" value="35"> 
+</progress>
+<p id="reader">hi</p>
+	</body>
+</html>
+
+
+
+<script>
+var b = document.getElementById("progBar");
+var r = document.getElementById("reader");
+//setInterval to 50 milliseconds
+var id = setInterval(add, 50);
+
+function add(){
+  if(b.value >= 100){
+//clear interval when value reach 100
+	 r.innerHTML = "Done";
+	 clearInterval(id);
+  }else{
+//add value every 50 milliseconds
+	 b.value++; // The progress bars value is increased by ine each time function 'add' is called (every 50 milliseconds by setInterval)
+	 r.innerHTML = b.value; // Element with id of "reader" displays value of the bar))
+  }
+}
+</script>

@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head lang="en-US>
+<meta charset="UTF-8">
+<title> Animated Fans </title>
+<link rel="stylesheet" href="HTMLnotes.css?version=1">
+</head>
+<body>
+
+ 
+<article>
+
+<p>
+<svg width="340" height="400" viewBox="-100 -50, 400 200" style="border: black solid; background-color:cyan;" preserveAspectRatio="xMidYMid meet">
+
+
+<path d="M-200 150 L500 150 L500 300 L-200 300 Z" fill="green" stroke="black" />
+
+<defs>
+
+<g id="fan">
+
+<title> Fan </title>
+
+<desc> Its an animated fan </desc>
+
+<g id="body">
+
+<path d="M70 180 l50 0 l-15 -15 m-35 15 l15 -15 l5 -65 l10 0 l5 65" fill="black" stroke="black" />
+<circle cx="95" cy="90" r="13" fill="black" />
+
+</g> 
+
+<defs>
+
+<g id="rectangles">
+
+<rect y="104" x="88" width="14" height="33" fill="lightgray" stroke="black"/>
+
+<rect y="82" x="48" width="33" height="14" fill="lightgray" stroke="black"/>
+
+<rect y="82" x="109" width="33" height="14" fill="lightgray" stroke="black"/>
+
+<rect y="43" x="88" width="14" height="33" fill="lightgray" stroke="black"/>
+
+</g>
+
+</defs>
+
+<use xlink:href="#rectangles">
+<animateTransform attributeName="transform" type="rotate" 
+values="0 95 90;360 95 90" repeatCount="indefinite" dur="2s" fill="remove" />
+</use>
+
+</g>
+
+</defs>
+
+<use xlink:href="#fan" x="-140" />
+
+<use xlink:href="#fan" x="0" />
+
+<use xlink:href="#fan" x="140" />
+
+</svg>
+</p> 
+
+ 
+ 
+</article>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<form action="url" method="post">
+    <label>Username</label><br />
+    <input type="text" placeholder="enter your username" name="username" /><br />
+    <label>Email</label><br />
+    <input type="email" placeholder="enter your email address" name="email" /><br />
+    <label>Password</label><br />
+    <input type="password" placeholder="enter your password" name="password" /><br />
+    <label>Gender</label><br />
+    <input type="radio" name="gender" value="male" /> Male
+    <input type="radio" name="gender" value="female" /> Female <br />
+    <label>Hobbies</label><br />
+    <input type="checkbox" name="hobbies" value="sports" /> Sports <br />
+    <input type="checkbox" name="hobbies" value="travel" /> Travelling <br />
+    <input type="checkbox" name="hobbies" value="theater" /> Theater <br />
+    <input type="checkbox" name="hobbies" value="books" /> Books <br />
+    <label>Select your country</label>
+    <select name="country">
+        <option value="fr">France</option>
+        <option value="uk">United Kingdom</option>
+        <option value="de">Germany</option>
+        <option value="es">Spain</option>
+        <option value="dk">Denmark</option>
+        <option value="fin">Finland</option>
+    </select><br />
+    <input type="submit" name="submit" value="submit" />
+</form>
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>my form</title>
+	</head>
+	<body>
+		
+		<div style="background-color:pink;color:purple;" align="center">
+			<h1 align="center"><span style="color:red">Contact me</span></h1>
+			<form  action="http://www.google.com">
+				<input type="text" name="username" value="username"/><br/>
+				<input type="password" name="password" value="password"/><br/>
+				<input type="radio" name="gender" value="male"/>Male<br/>
+				<input type="radio" name="gender" value="female"/>Female<br/>
+				<textarea name="message">say what you want</textarea>
+				<br/><input type="submit" value="send"/>
+			</form>
+		</div>
+	</body>
+</html>
